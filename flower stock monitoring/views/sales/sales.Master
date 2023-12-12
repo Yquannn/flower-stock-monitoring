@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="sales.master.cs" Inherits="flower_stock_monitoring.views.sales.sales" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../../asset/lib/css/bootstrap.min.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light text-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../mainPage/mainPage.aspx">Stock <img src="../../asset/img/ready-stock.png"/></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sales.aspx">Sales <img src="../../asset/img/sales.png"/></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container mt-5">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <script src="../../Assets/lib/js/jquery-3.6.0.slim.min.js"></script>
+    <script src="../../Assets/lib/js/popper.min.js"></script>
+    <script src="../../Assets/lib/js/bootstrap.min.js"></script>
+</body>
+</html>
